@@ -1,0 +1,72 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ Mixins ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+	/* ~~~~~~~~~~ Fluid type ~~~~~~~~~~ */
+
+	@function strip-unit($value) {
+  		@return $value / ($value * 0 + 1);
+	}
+
+	@mixin fluid-type($min-font-size, $max-font-size, $line-height: 1.3) {
+  		font-size: $min-font-size;
+  		line-height: $line-height;
+
+  		@include media-breakpoint-up(sm) {
+  			font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{576px}) / #{strip-unit(1200px - 576px)}));
+  		}
+
+  		@include media-breakpoint-up(xl) {
+  			font-size: $max-font-size;
+  		}
+	}
+
+
+	/* ~~~~~~~~~~ Letter spacing ~~~~~~~~~~~ */
+
+	@mixin letter-spacing($letterSpacing) {
+		$letterSpacingToEm: ($letterSpacing * 0.001);
+		$letterSpacingToEmAfterChangeSize: ($letterSpacingToEm * 0.2);
+
+		letter-spacing: $letterSpacingToEmAfterChangeSize + em;
+
+		@include media-breakpoint-up(sm) {
+			$letterSpacingToEmAfterChangeSize: ($letterSpacingToEm * 0.4);
+
+			letter-spacing: $letterSpacingToEmAfterChangeSize + em;
+		}
+
+		@include media-breakpoint-up(md) {
+			$letterSpacingToEmAfterChangeSize: ($letterSpacingToEm * 0.6);
+
+			letter-spacing: $letterSpacingToEmAfterChangeSize + em;
+		}
+
+		@include media-breakpoint-up(lg) {
+			$letterSpacingToEmAfterChangeSize: ($letterSpacingToEm * 0.8);
+
+			letter-spacing: $letterSpacingToEmAfterChangeSize + em;
+		}
+
+		@include media-breakpoint-up(xl) {
+			letter-spacing: $letterSpacingToEm + em;
+		}
+	}
+
+
+	/* ~~~~~~~~~~ Sticky WordPress Admin Bar Fix ~~~~~~~~~~ */
+
+	@mixin admin-sticky-fix( $offset: 0 ) {
+  		@if $offset != 0 and type-of($offset) == 'number' {
+    		$mobile-wp-admin-bar-height: $mobile-wp-admin-bar-height + $offset;
+    		$desktop-wp-admin-bar-height: $desktop-wp-admin-bar-height + $offset;
+  		}
+
+  		.admin-bar & {
+    		top: $mobile-wp-admin-bar-height;
+
+    		@media screen and (min-width: 783px) {
+      			top: $desktop-wp-admin-bar-height;
+    		}
+  		}
+	}

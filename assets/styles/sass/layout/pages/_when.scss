@@ -1,0 +1,17 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ When - Template ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.when-template {
+	.container-fluid {
+		padding: 0;
+
+		.months-wrapper {
+			background: #eee;
+
+			@include media-breakpoint-up(lg) {
+				padding-top: 5px;
+			}
+		}
+	}
+}

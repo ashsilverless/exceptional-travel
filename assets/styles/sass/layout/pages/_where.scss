@@ -1,0 +1,209 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ Where - Template ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.where-template {
+	.hello-section {
+		&__icons {
+			li {
+				margin: 0 20px;
+
+				@include media-breakpoint-up(sm) {
+					margin: 0 30px;
+				}
+
+				@include media-breakpoint-up(md) {
+					margin: 0 40px;
+				}
+
+				&:first-child {
+					.hello-section__icons__single-icon {
+						width: 55px;
+						height: 55px;
+					}
+				}
+
+				a {
+					&:hover {
+						.hello-section__icons__single-icon {
+							path,
+							* {
+								fill: $primary-color;
+							}
+						}
+
+						.hello-section__icons__label {
+							color: $primary-color;
+						}
+					}
+				}
+			}
+
+			&__single-icon {
+				@extend %single-transition;
+				max-width: 70px;
+				max-height: 70px;
+
+				path,
+				* {
+					@extend %single-transition;
+				}
+			}
+
+			&__label {
+				@extend %single-transition;
+				@include primary-font('regular');
+				font-size: 12px;
+
+				b {
+					@include fluid-type(14px, 16px, 1.1);
+					@include primary-font('semibold');
+					display: block;
+				}
+			}
+		}
+	}
+
+	.container-fluid {
+		padding: 0;
+
+		.destinations-wrapper {
+			background: #eee;
+
+			.single-destination {
+				@include media-breakpoint-up(xl) {
+				    max-height: 430px;
+				}
+			}
+		}
+	}
+
+	.destinations-map {
+		background: #eee;
+
+		&__image {
+			width: 100%;
+			height: 240px;
+			display: block;
+
+			@include media-breakpoint-up(sm) {
+				height: 330px;
+			}
+
+			@include media-breakpoint-up(md) {
+				height: 450px;
+			}
+
+			@include media-breakpoint-up(lg) {
+				height: 720px;
+			}
+
+			path,
+			* {
+				@extend %single-transition;
+				fill: #9e9e9e;
+				stroke-width: 1.5;
+				stroke: #9e9e9e;
+			}
+
+			a {
+				&:hover {
+					path,
+					* {
+						fill: $primary-color !important;
+						stroke: $primary-color !important;
+					}
+				}
+			}
+
+			#on-desktop-map-south-east-asia {
+				path,
+				* {
+					fill: $primary-color;
+					stroke: $primary-color;
+				}
+			}
+
+			#on-desktop-map-indian-ocean {
+				path,
+				* {
+					fill: transparent !important;
+					stroke: none !important;
+				}
+			}
+		}
+
+		&__title {
+			@include primary-font('semibold');
+		}
+
+		&__underline {
+			margin: 25px auto;
+			height: 2px;
+			display: block;
+
+			path {
+				fill: $primary-color;
+			}
+		}
+
+		&__content {
+			@include fluid-type(17px, 19px);
+			@include letter-spacing(25);
+		}
+
+		.exceptional-travel-button {
+			display: inline-flex;
+			width: auto;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: ($element-space__xs * .75);
+
+			padding: 10px 30px;
+
+			@include media-breakpoint-up(sm) {
+			    padding: 12.5px 35px;
+			}
+
+			@include media-breakpoint-up(md) {
+			    padding: 12.5px 45px;
+			}
+
+			@include media-breakpoint-up(lg) {
+			    padding: 12.5px 50px;
+			}
+
+			@include media-breakpoint-up(sm) {
+			    margin-top: ($element-space__sm * .75);
+			}
+
+			@include media-breakpoint-up(md) {
+			    margin-top: ($element-space__md * .75);
+			}
+
+			@include media-breakpoint-up(lg) {
+			    margin-top: ($element-space__lg * .75);
+			}
+
+			@include media-breakpoint-up(xl) {
+			    margin-top: ($element-space__xl * .75);
+			}
+
+			img {
+				display: inline-block;
+				width: 35px;
+				height: 35px;
+				margin-right: 20px;
+			}
+
+			span {
+				display: flex;
+			}
+
+			b {
+				@include primary-font('black');
+				margin-left: 5px;
+			}
+		}
+	}
+}

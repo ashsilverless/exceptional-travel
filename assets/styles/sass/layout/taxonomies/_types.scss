@@ -1,0 +1,95 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ Types - Taxonomy Page ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.taxonomy-types-page {
+
+	&--private-villas {
+		.hello-section {
+			background: -moz-linear-gradient(top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 140px);
+			background: -webkit-linear-gradient(top, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 124px);
+			background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 124px);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+		}
+
+		.type {
+			#where-go {
+				background: #eee !important;
+			}
+		}
+	}
+
+	.hello-section {
+		&__countries {
+			&__map {
+				path,
+				* {
+					@extend %single-transition;
+					fill: #c6c4c4;
+					stroke-width: 1.5;
+					stroke: #c6c4c4;
+				}
+
+				a {
+					&:hover {
+						path,
+						* {
+							fill: $primary-color !important;
+							stroke: $primary-color !important;
+						}
+					}
+				}
+
+				#on-mobile-map-indian-ocean {
+					path,
+					* {
+						fill: transparent !important;
+						stroke: none !important;
+					}
+				}
+			}
+		}
+	}
+
+	.type {
+		background: #eee;
+
+		&__title {
+			@include primary-font('semibold');
+		}
+
+		&__content {
+			@include fluid-type(17px, 19px);
+			@include letter-spacing(25);
+		}
+
+		#where-go {
+			background: #d6d6d6;
+			padding-top: ($element-space__xs / 2);
+
+			@include media-breakpoint-up(sm) {
+			    padding-top: ($element-space__sm / 2);
+			}
+
+			@include media-breakpoint-up(md) {
+			    padding-top: ($element-space__md / 2);
+			}
+
+			@include media-breakpoint-up(lg) {
+			    padding-top: ($element-space__lg / 2);
+			}
+
+			@include media-breakpoint-up(xl) {
+			    padding-top: ($element-space__xl / 2);
+			}
+
+
+			.destination__countries__title {
+				@include primary-font('semibold');
+				@include fluid-type(19px, 22px);
+				@include letter-spacing(100);
+			}
+
+		}
+	}
+}

@@ -1,0 +1,38 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ Fonts ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+	/* ~~~~~~~~~~ Lato ~~~~~~~~~~ */
+
+	@mixin primary-font($fontWeight) {
+	    @if $fontWeight == "light" {
+	        font-weight: 300;
+	    } @elseif $fontWeight == "regular" {
+	        font-weight: 400;
+	    } @elseif $fontWeight == "semibold" {
+	        font-weight: 600;
+	    } @elseif $fontWeight == "bold" {
+	        font-weight: 700;
+	    } @elseif $fontWeight == "black" {
+	        font-weight: 900;
+	    }
+	    font-family: 'lato', sans-serif;
+	    font-style: normal;
+	}
+
+
+	/* ~~~~~~~~~~ Trajan ~~~~~~~~~~ */
+
+	@mixin secondary-font($fontWeight) {
+	    @if $fontWeight == "light" {
+	        font-weight: 300;
+	    } @elseif $fontWeight == "regular" {
+	        font-weight: 400;
+	    } @elseif $fontWeight == "semibold" {
+	        font-weight: 600;
+	    } @elseif $fontWeight == "bold" {
+	        font-weight: 700;
+	    }
+	    font-family: 'trajan-pro-3', sans-serif;
+	    font-style: normal;
+	}

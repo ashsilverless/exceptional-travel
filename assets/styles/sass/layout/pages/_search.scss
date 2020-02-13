@@ -1,0 +1,139 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ Search Page - Template ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.search-results-page {
+	.search-page {
+		background: #eee;
+
+		.search-result {
+			border: 1px solid #fff;
+			margin-top: 15px;
+			padding: 15px;
+
+		    &--first {
+		        margin-top: 0 !important;
+		    }
+
+		    @include media-breakpoint-up(sm) {
+		    	padding: 20px;
+		    	margin-top: 30px;
+
+		        &--second {
+		            margin-top: 0 !important;
+		        }
+		    }
+
+		    @include media-breakpoint-up(md) {
+		    	padding: 30px 20px;
+
+		        &--third {
+		            margin-top: 0 !important;
+		        }
+		    }
+
+			&__title {
+				@include primary-font('semibold');
+			}
+		}
+
+		.pagination-wrapper {
+		    @extend .element-margin-top;
+
+		    .pagination {
+		        justify-content: center;
+		        color: #fff;
+
+		        .page-item {
+		            margin: 0 10px;
+
+
+		            .page-numbers {
+		                @include primary-font('semi-bold');
+		                @include fluid-type(15px, 16px, 1);
+		                display: flex;
+		                align-items: center;
+		                justify-content: center;
+		                background-color: $primary-color;
+		                width: 40px;
+		                height: 40px;
+		                position: relative;
+		                transition: color 0.2s;
+
+		                @include media-breakpoint-up(sm) {
+		                    width: 42.5px;
+		                    height: 42.5px;
+		                }
+
+		                @include media-breakpoint-up(md) {
+		                    width: 45px;
+		                    height: 45px;
+		                }
+
+		                @include media-breakpoint-up(lg) {
+		                    width: 47.5px;
+		                    height: 47.5px;
+		                }
+
+		                @include media-breakpoint-up(xl) {
+		                    width: 50px;
+		                    height: 50px;
+		                }
+
+		                &:before,
+		                &:after {
+		                    box-sizing: inherit;
+		                    content: '';
+		                    position: absolute;
+		                    width: 100%;
+		                    height: 100%;
+		                    border: 2.5px solid transparent;
+		                    width: 0;
+		                    height: 0;
+		                }
+
+		                &:before {
+		                  top: 0;
+		                  left: 0;
+		                  border-top-color: $primary-color;
+		                  border-right-color: $primary-color;
+		                }
+
+		                &:after {
+		                    top: 0;
+		                    left: 0;
+		                    border-bottom-color: $primary-color;
+		                    border-left-color: $primary-color;
+		                }
+
+		                &:hover,
+		                &:focus,
+		                &.current {
+		                    background: transparent;
+		                    color: $primary-color;
+		                    cursor: pointer;
+
+		                    &:before,
+		                    &:after {
+		                        width: 100%;
+		                        height: 100%;
+		                    }
+
+		                    &:before {
+		                        transition:
+		                            width 0.15s ease-out,
+		                            height 0.15s ease-out 0.15s
+		                    }
+
+		                    &:after {
+		                        transition:
+		                            height 0.15s ease-out,
+		                            width 0.15s ease-out 0.15s;
+		                    }
+		                }
+		            }
+		        }
+		    }
+		}
+	}
+}

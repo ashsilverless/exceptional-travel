@@ -1,0 +1,217 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ Archives - News Post ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.blog-page-template {
+
+	.latest-news {
+		background: #d6d6d6;
+
+		&__carousel {
+			.owl-nav {
+			    .owl-prev {
+			    	top: calc(50% - 34px);
+			        &:before {
+			            color: #b5b5b5;
+			        }
+			    }
+
+			    .owl-next {
+			    	top: calc(50% - 34px);
+			        &:after {
+			            color: #b5b5b5;
+			        }
+			    }
+			}
+
+			.single-latest-news {
+				&__image-wrapper {
+					overflow: hidden;
+					height: 100%;
+
+					&:hover {
+						.single-latest-news__image-wrapper__image {
+							transform: scale(1.3);
+						}
+					}
+
+					&__image {
+						@extend %single-transition;
+						transform: scale(1);
+						height: 100%;
+					}
+				}
+
+				&__title {
+					@include primary-font('black');
+					@include fluid-type(18px, 19px);
+					@include letter-spacing(25);
+					text-transform: uppercase;
+					margin-top: 20px;
+
+					@include media-breakpoint-up(md) {
+						margin-top: 0;
+					}
+				}
+
+				&__excerpt {
+					@include primary-font('regular');
+					@include fluid-type(16px, 17px);
+					@include letter-spacing(25);
+					margin-top: 15px;
+
+					@include media-breakpoint-up(md) {
+						margin-top: 20px;
+					}
+				}
+
+				&__details {
+					margin-top: 15px;
+
+					&__author {
+						@include primary-font('regular');
+						@include fluid-type(15px, 16px);
+						@include letter-spacing(60);
+						line-height: 18px;
+					}
+
+					&__time {
+						margin-left: 25px;
+						@include primary-font('light');
+						@include letter-spacing(60);
+						font-size: 12px;
+						line-height: 18px;
+
+					}
+				}
+
+				&__share {
+					margin-top: 10px;
+					border-top: 1px solid #fff;
+					border-bottom: 1px solid #fff;
+					padding: 10px 0;
+
+					&__title {
+						@include primary-font('light');
+						@include letter-spacing(75);
+						font-style: italic;
+						font-size: 13px;
+					}
+
+					.social-icons {
+						margin-top: 10px;
+
+						&__item {
+							&__social-icon-link {
+								.fa {
+									color: #d6d6d6;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.in-touch {
+		padding-top: ($element-space__xs * 2);
+		padding-bottom: ($element-space__xs * 2);
+		position: relative;
+		color: #3a2b1d;
+
+		@include media-breakpoint-up(sm) {
+		    padding-top: ($element-space__sm * 1.5);
+		    padding-bottom: ($element-space__sm * 1.5);
+		}
+
+		@include media-breakpoint-up(md) {
+		    padding-top: ($element-space__md * 1.5);
+		    padding-bottom: ($element-space__md * 1.5);
+		}
+
+		@include media-breakpoint-up(lg) {
+		    padding-top: ($element-space__lg * 1.5);
+		    padding-bottom: ($element-space__lg * 1.5);
+		}
+
+		@include media-breakpoint-up(xl) {
+		    padding-top: ($element-space__xl * 1.5);
+		    padding-bottom: ($element-space__xl * 1.5);
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			background: transparent;
+			border-top: 15px solid #eee;
+			border-bottom: 15px solid #eee;
+		}
+
+		&:after {
+			content: '';
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(#fff, .33);
+			position: absolute;
+			z-index: -1;
+		}
+
+		&__title {
+			@include primary-font('medium');
+			@include fluid-type(18px, 20px, 1.5);
+			@include letter-spacing(60);
+			margin-top: 0;
+		}
+
+		&__buttons {
+			margin-top: 10px;
+
+			.exceptional-travel-button {
+				@include fluid-type(18px, 23px, 1.1);
+				@include letter-spacing(75);
+				color: #3c3c3c;
+				flex-basis: 100%;
+				padding: 15px 30px;
+
+				@include media-breakpoint-up(sm) {
+				    padding: 17.5px 10px;
+				}
+
+				@include media-breakpoint-up(md) {
+					flex-basis: calc(50% - 15px);
+					padding: 20px 10px;
+				}
+
+				@include media-breakpoint-up(lg) {
+					flex-basis: calc(50% - 20px);
+					padding: 25px 10px;
+				}
+
+				@include media-breakpoint-up(xl) {
+					flex-basis: calc(50% - 25px);
+				}
+
+				svg {
+					max-width: 35px !important;
+
+					path,
+					* {
+						fill: #3c3c3c;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ What - Template ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.what-template {
+	.container-fluid {
+		padding: 0;
+
+		.types-wrapper {
+			background: #eee;
+
+			@include media-breakpoint-up(lg) {
+				padding-top: 5px;
+			}
+
+			.single-type {
+				@include media-breakpoint-up(sm) {
+				    height: 45vw;
+				}
+
+				@include media-breakpoint-up(md) {
+				    height: 35vw;
+				}
+
+				@include media-breakpoint-up(lg) {
+				    height: 30vw;
+				}
+			}
+		}
+	}
+}
