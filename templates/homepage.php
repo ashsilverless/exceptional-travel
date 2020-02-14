@@ -27,7 +27,7 @@
 		    <div class="background" style="background:url(<?php the_sub_field('image');?>)"></div>
 		    <div class='content'>
 		      <img src="https://exceptional-travel.com/wp-content/themes/exceptional-travel/images/logo__exceptional-travel.svg"
-		        class="logo" />
+		        class="logo" alt="Exceptional Travel - Bespoke Luxury Holidays"/>
 		      <h2 class='heading'>
 		        <span>Explore.</span>
 		        <span>Dream.</span>
