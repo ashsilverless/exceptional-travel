@@ -1205,7 +1205,7 @@ body#tinymce a:not([class*="-button"]) {
   opacity: 0;
   transition: opacity 3s ease;
   transition-delay: 3s;
-  width: 25em;
+  width: 50em;
   margin-bottom: 5em;
 }
 .silverless-slider__item .content .heading {
