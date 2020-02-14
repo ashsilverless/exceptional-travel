@@ -83,8 +83,8 @@
 
 $(document).ready(function(){
 	$('.partners__carousel_revised.owl-carousel').owlCarousel({
-	    autoplay: false,
-	    loop:false,
+	    autoplay: true,
+	    loop:true,
 	    margin:10,
 	    nav:false,
 	    dots: false,

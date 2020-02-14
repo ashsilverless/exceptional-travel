@@ -125,7 +125,7 @@
 
             var owlPartnersSection = $('.partners__carousel');
             owlPartnersSection.owlCarousel({
-                loop: false,
+                loop: true,
                 margin: 15,
                 lazyLoad: true,
                 dots: false,
@@ -644,7 +644,7 @@
             setTimeout(function() {
 
                     if($('#world-map-desktop').length) {
-	                    
+
                         $("#on-desktop-map-australia").click(function(){
                             //$("#world-map-desktop path.cls-1").css("fill", '#8a8a8a').css("stroke", '#9e9e9e');
                             $("#on-desktop-map-australia path").css("fill", '#dcb070').css("stroke", '#dcb070');
