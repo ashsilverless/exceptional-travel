@@ -1260,3 +1260,13 @@ body .exceptional-travel-button__text-only {
 body .follow-us .partners__title {
     color: #e6e6e6;/*for contrast ratios*/
 }
+
+svg.svg-underline {
+    width:62px;
+    height:3px;
+}
+
+svg.svg-underline.wide {
+    display: block;
+    margin: 25px auto;
+}

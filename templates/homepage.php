@@ -136,8 +136,7 @@ if (preg_match("/iPhone/", $agent)) { // Apple iPhone Device
 
 									<a href="<?php echo esc_url( get_term_link( $term ) ); ?>" class="single-month d-flex flex-wrap align-items-end justify-content-center text-center background-cover lazy" data-src="<?php echo $image['url']; ?>">
 										<span class="single-month__content-wrapper">
-<?php get_template_part('assets/images/icon__underline--white');?>
-
+											<?php get_template_part('assets/images/icon__underline--white');?>
 											<span class="single-month__content-wrapper__name d-block"><?php echo $term->name; ?></span>
 											<span class="single-month__content-wrapper__more block">Find out more</span>
 										</span>
@@ -182,7 +181,7 @@ if (preg_match("/iPhone/", $agent)) { // Apple iPhone Device
 
 									<a href="<?php echo esc_url( get_term_link( $term ) ); ?>" class="single-type d-flex flex-wrap align-items-end justify-content-center text-center background-cover lazy" data-src="<?php echo $image['url']; ?>">
 										<span class="single-type__content-wrapper">
-											<img src="<?php echo get_template_directory_uri(); ?>/images/icon__underline--white.svg" alt="underline" class="single-type__content-wrapper__underline svg" />
+											<?php get_template_part('assets/images/icon__underline--white');?>
 											<span class="single-type__content-wrapper__name d-block"><?php echo $term->name; ?></span>
 											<span class="single-type__content-wrapper__more block">Find out more</span>
 										</span>
@@ -283,7 +282,7 @@ if (preg_match("/iPhone/", $agent)) { // Apple iPhone Device
 
 									<div id="map-<?php echo $term->slug; ?>-desktop" class="tab-pane fade<?php if( $loopCounter == 1 ) { echo ' show active';} ?>"  role="tabpanel" aria-labelledby="<?php echo $term->slug; ?>-tab">
 										<h2 class="destinations-map__title"><?php echo $term->name; ?></h2><!-- /.destinations-map__title -->
-										<img src="<?php echo get_template_directory_uri(); ?>/images/icon__underline--white.svg" alt="underline" class="destinations-map__underline svg" />
+										<?php get_template_part('assets/images/icon__underline--yellow');?>
 										<div class="destinations-map__content content">
 											<?php the_field('destinations_description', $term); ?>
 										</div><!-- /.destinations-map__content content -->
@@ -327,7 +326,7 @@ if (preg_match("/iPhone/", $agent)) { // Apple iPhone Device
 												<a href="<?php echo esc_url( get_term_link( $term ) ); ?>" class="single-month d-flex flex-wrap align-items-end justify-content-center text-center background-cover lazy" data-src="<?php echo $image['url']; ?>">
 													<span class="single-month__content-wrapper">
 
-<?php get_template_part('assets/images/icon__underline--white');?>
+														<?php get_template_part('assets/images/icon__underline--white');?>
 
 														<span class="single-month__content-wrapper__name d-block"><?php echo $term->name; ?></span>
 														<span class="single-month__content-wrapper__more block">Find out more</span>
@@ -359,7 +358,7 @@ if (preg_match("/iPhone/", $agent)) { // Apple iPhone Device
 
 												<a href="<?php echo esc_url( get_term_link( $term ) ); ?>" class="single-type d-flex flex-wrap align-items-end justify-content-center text-center background-cover lazy" data-src="<?php echo $image['url']; ?>">
 													<span class="single-type__content-wrapper">
-														<img src="<?php echo get_template_directory_uri(); ?>/images/icon__underline--white.svg" alt="underline" class="single-type__content-wrapper__underline svg" />
+														<?php get_template_part('assets/images/icon__underline--white');?>
 														<span class="single-type__content-wrapper__name d-block"><?php echo $term->name; ?></span>
 														<span class="single-type__content-wrapper__more block">Find out more</span>
 													</span>
