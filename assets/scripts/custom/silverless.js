@@ -14,4 +14,3 @@
                         $(".country-indonesia").css("color", '#fff');
                     });
                     }
-document.addEventListener('touchstart', onTouchStart, {passive: true});

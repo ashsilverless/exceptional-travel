@@ -1,30 +1,30 @@
 jQuery(document).ready(function( $ ) {
 
 //========== Amend Read More to include a Read Less function
-	    
+
 	$('.open-trigger').on('click', function() {
 		$('.row').removeClass('expand-content');
 		$(this).closest('.row').addClass('expand-content');
 		$('.open-trigger').css('opacity', '1');
-		$(this).css('opacity', '0');	
+		$(this).css('opacity', '0');
     });
 
 	$('.close-trigger').on('click', function() {
 		$(this).closest('.row').removeClass('expand-content');
 		$(this).css('opacity', '1');
-		$('.open-trigger').css('opacity', '1');	
+		$('.open-trigger').css('opacity', '1');
     });
 
 //==========  Trigger for months & destination shortcuts thumb section
 
 	$('.shortcut-trigger').on('click', function() {
-		$('.shortcut-thumbs').toggleClass('reveal');	
+		$('.shortcut-thumbs').toggleClass('reveal');
     });
 
 //==========  Adjust maps section
 
-var hoverColor =  ('#dcb070'); 
-var normalColor = ('#828282');         
+var hoverColor =  ('#dcb070');
+var normalColor = ('#828282');
 var textColor = ('#e6e6e6');
 
 setTimeout(function() {
@@ -35,13 +35,13 @@ if($('#world-map-desktop').length) {
   $(this).css("fill", hoverColor);
 
 });
-	                    
+
 $("#on-desktop-map-australia").click(function(){
     $("#world-map-desktop path").css("fill", '#707070').css("stroke", '#707070');
     $("#unused path").css("fill", '#a4a4a4').css("stroke", '#a4a4a4');
     $("#on-desktop-map-australia path").css("fill", '#dcb070').css("stroke", '#dcb070');
     $('#myMapTab a[href="#map-australasia-desktop"]').tab('show');
-    
+
 });
 
 $("#on-desktop-map-south-east-asia").click(function(){
@@ -209,13 +209,13 @@ if($('.country-argentina.active').length) {
       });
 }
 
-$("#AR").hover(function(){ 
+$("#AR").hover(function(){
   $(".country-argentina").css("color", hoverColor);
   $("#AR").css('fill', hoverColor);
 }, function() {
   $("#AR").css("fill", normalColor);
-  $(".country-argentina").css("color", textColor);            
-});                    
+  $(".country-argentina").css("color", textColor);
+});
 //=====================
 if($('.country-brazil.active').length) {
   $("#BR").css("fill", hoverColor);
@@ -227,13 +227,13 @@ if($('.country-brazil.active').length) {
       });
 }
 
-$("#BR").hover(function(){ 
+$("#BR").hover(function(){
   $(".country-brazil").css("color", hoverColor);
   $("#BR").css('fill', hoverColor);
 }, function() {
   $("#BR").css("fill", normalColor);
-  $(".country-brazil").css("color", textColor);            
-});                    
+  $(".country-brazil").css("color", textColor);
+});
 
 //=====================
 if($('.country-colombia.active').length) {
@@ -246,14 +246,14 @@ if($('.country-colombia.active').length) {
       });
 }
 
-$("#CO").hover(function(){ 
+$("#CO").hover(function(){
   $(".country-colombia").css("color", hoverColor);
   $("#CO").css('fill', hoverColor);
 }, function() {
   $("#CO").css("fill", normalColor);
-  $(".country-colombia").css("color", textColor);            
-});      
-//===================== 
+  $(".country-colombia").css("color", textColor);
+});
+//=====================
 
  if($('.country-chile.active').length) {
   $("#CH").css("fill", hoverColor);
@@ -265,14 +265,14 @@ $("#CO").hover(function(){
       });
 }
 
-$("#CH").hover(function(){ 
+$("#CH").hover(function(){
   $(".country-chile").css("color", hoverColor);
   $("#CH").css('fill', hoverColor);
 }, function() {
   $("#CH").css("fill", normalColor);
-  $(".country-chile").css("color", textColor);            
-});                    
-//===================== 
+  $(".country-chile").css("color", textColor);
+});
+//=====================
   if($('.country-ecuador.active').length) {
   $("#EC").css("fill", hoverColor);
 } else {
@@ -283,14 +283,14 @@ $("#CH").hover(function(){
       });
 }
 
-$("#EC").hover(function(){ 
+$("#EC").hover(function(){
   $(".country-ecuador").css("color", hoverColor);
   $("#EC").css('fill', hoverColor);
 }, function() {
   $("#EC").css("fill", normalColor);
-  $(".country-ecuador").css("color", textColor);            
-});                    
-//===================== 
+  $(".country-ecuador").css("color", textColor);
+});
+//=====================
   if($('.country-peru.active').length) {
   $("#PE").css("fill", hoverColor);
 } else {
@@ -301,14 +301,14 @@ $("#EC").hover(function(){
       });
 }
 
-$("#PE").hover(function(){ 
+$("#PE").hover(function(){
   $(".country-peru").css("color", hoverColor);
   $("#PE").css('fill', hoverColor);
 }, function() {
   $("#PE").css("fill", normalColor);
-  $(".country-peru").css("color", textColor);            
-});                    
-//=====================  
+  $(".country-peru").css("color", textColor);
+});
+//=====================
 
 }//End South America
 
@@ -316,7 +316,7 @@ if($('.taxonomy-destinations-page #map-polar-regions').length) {
 
 $("#ant_1_, #arc_1_, sval_1_").css("fill", normalColor);
 
-//===================== 
+//=====================
   if($('.country-antarctica.active').length) {
   $("#ant_1_").css("fill", hoverColor);
 } else {
@@ -327,14 +327,14 @@ $("#ant_1_, #arc_1_, sval_1_").css("fill", normalColor);
       });
 }
 
-$("#ant_1_").hover(function(){ 
+$("#ant_1_").hover(function(){
   $(".country-antarctica").css("color", hoverColor);
   $("#ant_1_").css('fill', hoverColor);
 }, function() {
   $("#ant_1_").css("fill", normalColor);
-  $(".country-antarctica").css("color", textColor);            
-});                    
-//=====================  
+  $(".country-antarctica").css("color", textColor);
+});
+//=====================
 if($('.country-the-arctic.active').length) {
   $("#arc_1_").css("fill", hoverColor);
 } else {
@@ -345,14 +345,14 @@ if($('.country-the-arctic.active').length) {
       });
 }
 
-$("#arc_1_").hover(function(){ 
+$("#arc_1_").hover(function(){
   $(".country-the-arctic").css("color", hoverColor);
   $("#arc_1_").css('fill', hoverColor);
 }, function() {
   $("#arc_1_").css("fill", normalColor);
-  $(".country-the-arctic").css("color", textColor);            
-});    
-//=====================  
+  $(".country-the-arctic").css("color", textColor);
+});
+//=====================
 if($('.country-norway.active').length) {
   $("#sval_1_").css("fill", hoverColor);
 } else {
@@ -363,21 +363,21 @@ if($('.country-norway.active').length) {
       });
 }
 
-$("#sval_1_").hover(function(){ 
+$("#sval_1_").hover(function(){
   $(".country-norway").css("color", hoverColor);
   $("#sval_1_").css('fill', hoverColor);
 }, function() {
   $("#sval_1_").css("fill", normalColor);
-  $(".country-norway").css("color", textColor);            
-});                   
-//=====================  
+  $(".country-norway").css("color", textColor);
+});
+//=====================
 }//End Polar
 
 if($('.taxonomy-destinations-page #map__central-america').length) {
 
 $("#CR, #CU, #ME").css("fill", normalColor);
 
-//===================== 
+//=====================
 if($('.country-costa-rica.active').length) {
   $("#CR").css("fill", hoverColor);
 } else {
@@ -388,14 +388,14 @@ if($('.country-costa-rica.active').length) {
       });
 }
 
-$("#CR").hover(function(){ 
+$("#CR").hover(function(){
   $(".country-costa-rica").css("color", hoverColor);
   $("#CR").css('fill', hoverColor);
 }, function() {
   $("#CR").css("fill", normalColor);
-  $(".country-costa-rica").css("color", textColor);            
-});                    
-//=====================  
+  $(".country-costa-rica").css("color", textColor);
+});
+//=====================
 if($('.country-mexico.active').length) {
   $("#ME").css("fill", hoverColor);
 } else {
@@ -406,14 +406,14 @@ if($('.country-mexico.active').length) {
       });
 }
 
-$("#ME").hover(function(){ 
+$("#ME").hover(function(){
   $(".country-mexico").css("color", hoverColor);
   $("#ME").css('fill', hoverColor);
 }, function() {
   $("#ME").css("fill", normalColor);
-  $(".country-mexico").css("color", textColor);            
-});                    
-//=====================  
+  $(".country-mexico").css("color", textColor);
+});
+//=====================
 if($('.country-cuba.active').length) {
   $("#CU").css("fill", hoverColor);
 } else {
@@ -424,14 +424,14 @@ if($('.country-cuba.active').length) {
       });
 }
 
-$("#CU").hover(function(){ 
+$("#CU").hover(function(){
   $(".country-cuba").css("color", hoverColor);
   $("#CU").css('fill', hoverColor);
 }, function() {
   $("#CU").css("fill", normalColor);
-  $(".country-cuba").css("color", textColor);            
-});                    
-//=====================     
+  $(".country-cuba").css("color", textColor);
+});
+//=====================
 }//End Central America
 
 if($('.taxonomy-destinations-page #map__indian-ocean').length) {
@@ -787,7 +787,7 @@ if($('.taxonomy-destinations-page #map__south-east-asia').length) {
 
 $("#ID, #MM, #TH, #VN, #MY, #KH, #LA").css("fill", normalColor);
 
-//=====================  
+//=====================
 if($('.country-indonesia.active').length) {
   $("#ID").css("fill", hoverColor);
 } else {
@@ -798,14 +798,14 @@ if($('.country-indonesia.active').length) {
       });
 }
 
-$("#ID").hover(function(){ 
+$("#ID").hover(function(){
   $(".country-indonesia").css("color", hoverColor);
   $("#ID").css('fill', hoverColor);
 }, function() {
   $("#ID").css("fill", normalColor);
-  $(".country-indonesia").css("color", textColor);            
-});                    
-//=====================     
+  $(".country-indonesia").css("color", textColor);
+});
+//=====================
 
     if($('.country-myanmar.active').length) {
         $("#map__south-east-asia #MM").css("fill", '#dcb070');
@@ -1174,7 +1174,7 @@ $("#KE, #BW, #CG, #ET, #MG, #MW, #MZ, #MA, #NA, #RW, #TZ, UG, #ZA, #ZM, #ZW, #ST
 
 
 
-//==========  Replace Owl Config for Footer slider 
+//==========  Replace Owl Config for Footer slider
 
             var owlPartnersSection = $('.partners__carousel_revised');
             owlPartnersSection.owlCarousel({
@@ -1206,3 +1206,5 @@ $("#KE, #BW, #CG, #ET, #MG, #MW, #MZ, #MA, #NA, #RW, #TZ, UG, #ZA, #ZM, #ZW, #ST
 
 
 }); // Closing Jquery staterment - do not remove
+
+document.addEventListener('touchstart', onTouchStart, {passive: true});
