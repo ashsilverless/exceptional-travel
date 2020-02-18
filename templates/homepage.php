@@ -21,8 +21,6 @@
 			<?php if( have_rows('slider') ):
 			while ( have_rows('slider') ) : the_row();?>
 
-
-
 		  <div class='silverless-slider__item'>
 		    <div class="background" style="background:url(<?php the_sub_field('image');?>)"></div>
 		    <div class='content'>
@@ -35,15 +33,8 @@
 		      </h2>
 		    </div>
 		  </div>
-
-
 	  	<?php endwhile; endif;?>
-
 		</div>
-
-
-
-
 	</div><!-- /.intro -->
 
 	<div id="cta-home" class="cta-home">
@@ -501,12 +492,6 @@ if (preg_match("/iPhone/", $agent)) { // Apple iPhone Device
 	</div><!-- /.in-touch text-center -->
 
 </main><!-- /#main.homepage-template -->
-
-<script type="text/javascript">
-
-
-
-</script>
 
 <script>
 $(document).ready(function(){

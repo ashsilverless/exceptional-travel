@@ -1,4 +1,13 @@
 jQuery(document).ready(function( $ ) {
+	$(".silverless-slider__item:first").addClass("first-slide").delay(3000).queue(function(next){
+	    $(this).removeClass("first-slide");
+	    $(this).addClass('is-active');
+	});
+    var toggleSlide = function(){
+      $(".silverless-slider__item.is-active").removeClass("is-active").next().add(".silverless-slider__item:first").last().addClass("is-active");
+      $(".silverless-slider__item.first-slide").removeClass("first-slide");
+    }
+    setInterval(toggleSlide, 10000);
 
 //========== Amend Read More to include a Read Less function
 
@@ -1202,7 +1211,4 @@ $("#KE, #BW, #CG, #ET, #MG, #MW, #MZ, #MA, #NA, #RW, #TZ, UG, #ZA, #ZM, #ZW, #ST
                     }
                 }
             });
-
-
-
 }); // Closing Jquery staterment - do not remove
