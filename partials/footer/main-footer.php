@@ -152,3 +152,4 @@ $(document).ready(function(){
 		</div><!-- /.container -->
 	</footer><!-- /.main-footer -->
 </div><!-- /.footer-wrapper -->
+<script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
