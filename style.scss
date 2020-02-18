@@ -1270,3 +1270,19 @@ svg.svg-underline.wide {
     display: block;
     margin: 25px auto;
 }
+
+@media only screen and (max-width: 550px) {
+
+.silverless-slider__item .content .logo {
+    margin-bottom: 0;
+    padding: 0 1em;
+    align-self: flex-end;
+}
+.silverless-slider__item .content {
+    grid-template-rows: 1% 50% 49%;
+}
+.hello-section__scroll-down {
+    bottom: 30px!important;
+}
+
+}
