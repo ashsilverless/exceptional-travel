@@ -15,7 +15,7 @@
 				    <?php if ( get_field( 'social_icons_facebook', 'options' ) ): ?>
 
 					  	<li class="social-icons__item text-left text-sm-center">
-							<a href="<?php the_field( 'social_icons_facebook', 'options' ); ?>" class="social-icons__item__social-icon-link d-inline-block d-sm-block" target="_blank" rel="nofollow">
+							<a href="<?php the_field( 'social_icons_facebook', 'options' ); ?>" class="social-icons__item__social-icon-link d-inline-block d-sm-block" target="_blank" rel="noreferrer">
 								<i class="fa fa-facebook mx-auto"></i>
 								<span class="social-icons__item__social-icon-link__label d-block">Facebook</span>
 							</a>
@@ -26,7 +26,7 @@
 				  	<?php if ( get_field( 'social_icons_twitter', 'options' ) ): ?>
 
 					  	<li class="social-icons__item text-right text-sm-center">
-							<a href="<?php the_field( 'social_icons_twitter', 'options' ); ?>" class="social-icons__item__social-icon-link d-inline-block d-sm-block" target="_blank" rel="nofollow">
+							<a href="<?php the_field( 'social_icons_twitter', 'options' ); ?>" class="social-icons__item__social-icon-link d-inline-block d-sm-block" target="_blank" rel="noreferrer">
 								<i class="fa fa-twitter mx-auto"></i>
 								<span class="social-icons__item__social-icon-link__label d-block">Twitter</span>
 							</a>
@@ -37,7 +37,7 @@
 				    <?php if ( get_field( 'social_icons_instagram', 'options' ) ): ?>
 
 					  	<li class="social-icons__item text-left text-sm-center">
-							<a href="<?php the_field( 'social_icons_instagram', 'options' ); ?>" class="social-icons__item__social-icon-link d-inline-block d-sm-block" target="_blank" rel="nofollow">
+							<a href="<?php the_field( 'social_icons_instagram', 'options' ); ?>" class="social-icons__item__social-icon-link d-inline-block d-sm-block" target="_blank" rel="noreferrer">
 								<i class="fa fa-instagram mx-auto"></i>
 								<span class="social-icons__item__social-icon-link__label d-block">Instagram</span>
 							</a>
