@@ -144,10 +144,10 @@ $(document).ready(function(){
 					</div><!-- /.main-footer__nav d-md-flex -->
 				</div><!-- /.col col-auto mx-auto -->
 				<div class="col-12 col-md-auto ml-md-auto text-center d-md-none">
-					<span class="main-footer__website">Created by <a target="_blank" href="https://www.silverless.co.uk/">Silverless</a></span>
+					<span class="main-footer__website">Created by <a target="_blank" href="https://www.silverless.co.uk/" rel="noreferrer">Silverless</a></span>
 				</div><!-- /.col-12 col-md-auto ml-md-auto text-center d-md-none -->
 
-				<span class="main-footer__website d-none d-md-block">Created by <a target="_blank" href="http://www.silverless.co.uk/">Silverless</a></span>
+				<span class="main-footer__website d-none d-md-block">Created by <a target="_blank" href="http://www.silverless.co.uk/" rel="noreferrer">Silverless</a></span>
 			</div><!-- /.row -->
 		</div><!-- /.container -->
 	</footer><!-- /.main-footer -->
