@@ -1207,4 +1207,8 @@ $("#KE, #BW, #CG, #ET, #MG, #MW, #MZ, #MA, #NA, #RW, #TZ, UG, #ZA, #ZM, #ZW, #ST
 
 }); // Closing Jquery staterment - do not remove
 
-document.addEventListener('touchstart', onTouchStart, {passive: true});
+addEventListener(document, "touchstart", function(e) {
+  console.log(e.defaultPrevented);  // will be false
+  e.preventDefault();   // does nothing since the listener is passive
+  console.log(e.defaultPrevented);  // still false
+}, Modernizr.passiveeventlisteners ? {passive: true} : false);
