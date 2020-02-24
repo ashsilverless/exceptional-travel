@@ -400,7 +400,17 @@ function my_set_image_meta_upon_image_upload( $post_ID ) {
 	}
 }
 
-
+function add_taxonomy_to_single( $classes ) {
+    if ( is_single() ) {
+        global $post;
+        $my_terms = get_the_terms( $post->ID, 'types' );
+        if ( $my_terms && ! is_wp_error( $my_terms ) ) {
+            $classes[] = $my_terms[0]->slug;
+        }
+        return $classes;
+    }
+}
+add_filter( 'body_class', 'add_taxonomy_to_single' );
 
 
 

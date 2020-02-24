@@ -1257,6 +1257,15 @@ body .exceptional-travel-button__text-only {
     color: #454545;/*for contrast ratios*/
 }
 
+.main-content .facts__regions p,
+.main-content .shortcut-thumbs .shortcut-wrapper p {
+    color: white;
+}
+
+body:not(.expert-led ) #fancybox-title-over {
+    opacity: 0;
+}
+
 body .follow-us .partners__title {
     color: #e6e6e6;/*for contrast ratios*/
 }
@@ -1271,6 +1280,8 @@ svg.svg-underline.wide {
     margin: 25px auto;
 }
 
+
+
 @media only screen and (max-width: 550px) {
 
 .silverless-slider__item .content .logo {
@@ -1283,6 +1294,10 @@ svg.svg-underline.wide {
 }
 .hello-section__scroll-down {
     bottom: 30px!important;
+}
+
+.shortcut-trigger {
+    width:90%;
 }
 
 }
