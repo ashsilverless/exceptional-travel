@@ -1,4 +1,6 @@
 jQuery(document).ready(function( $ ) {
+
+window.onload = function (){
 	$(".silverless-slider__item:first").addClass("first-slide").delay(3000).queue(function(next){
 	    $(this).removeClass("first-slide");
 	    $(this).addClass('is-active');
@@ -8,6 +10,12 @@ jQuery(document).ready(function( $ ) {
       $(".silverless-slider__item.first-slide").removeClass("first-slide");
     }
     setInterval(toggleSlide, 10000);
+
+
+}
+
+
+
 
 //========== Amend Read More to include a Read Less function
 
