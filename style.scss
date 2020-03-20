@@ -1302,3 +1302,45 @@ svg.svg-underline.wide {
 }
 
 }
+
+.re-direct-template {
+    height:100vh;
+}
+
+.redirect-overlay {
+    position: absolute;
+    top: 0;
+    left: initial;
+    width: auto;
+    height: 100vh;
+}
+
+.redirect-overlay p {
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+
+.homepage-template .why-us__testimonials .owl-carousel {
+    padding:100px 0;
+}
+.homepage-template .why-us__testimonials .owl-carousel .owl-nav.disabled {
+    display: block;
+}
+
+body .owl-nav .owl-prev:hover {
+    left: -65px !important ;
+}
+
+.blog-page-template .latest-news__carousel .owl-nav .owl-next:after,
+.blog-page-template .latest-news__carousel .owl-nav .owl-prev:before {
+    color: #ffffff !important;
+}
+
+body .blog-page-template .in-touch__buttons .exceptional-travel-button {
+    color:white;
+}
+
+body .blog-page-template .in-touch__buttons .exceptional-travel-button svg path {
+    fill:white;
+}

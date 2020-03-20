@@ -10,12 +10,7 @@ window.onload = function (){
       $(".silverless-slider__item.first-slide").removeClass("first-slide");
     }
     setInterval(toggleSlide, 10000);
-
-
 }
-
-
-
 
 //========== Amend Read More to include a Read Less function
 
@@ -996,6 +991,29 @@ $("#KE, #BW, #CG, #ET, #MG, #MW, #MZ, #MA, #NA, #RW, #TZ, UG, #ZA, #ZM, #ZW, #ST
   }, function() {
       $(".country-ethiopia").css("color", '#ebebeb');
   });
+
+
+  if($('.country-egypt.active').length) {
+      $("#map__africa #EG").css("fill", '#dcb070');
+  } else {
+      $(".country-egypt").hover(function(){
+          $("#map__africa #EG").css("fill", '#dcb070');
+      }, function() {
+          $("#map__africa #EG").css("fill", '#939191');
+      });
+  }
+  $("#map__africa #EG").hover(function(){
+      $(".country-egypt").css("color", '#dcb070');
+  }, function() {
+      $(".country-egypt").css("color", '#ebebeb');
+  });
+
+
+
+
+
+
+
 
 
   if($('.country-madagascar.active').length) {
